@@ -52,17 +52,17 @@ body {
 }
 .menu span .heart .fa-solid {
   color: transparent;
-  transform: scale(0.15);
+  transform: scale(0);
+  background: linear-gradient(#9356dc, #ff79da);
+  transition: all 2s ease-in-out;
+  background-clip: text;
 }
 .menu span .heart i {
   position: absolute;
   font-size: 1.6rem;
 }
-.menu span .heart .fa-solid:hover {
+.menu span .heart:hover .fa-solid {
   transform: scale(1.15);
-  background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  transition-duration: 2s;
 }
 .menu span h2 {
   font-family: Shrikhand, cursive;
@@ -89,13 +89,6 @@ body {
   animation: valider 0.5s;
   animation-fill-mode: both;
 }
-.menu .fonction1-menu:hover .valide {
-  transform: scale(1);
-  transform: rotate(0);
-}
-.menu .fonction1-menu:hover .check-menu {
-  margin-right: 0;
-}
 .menu .fonction1-menu .prix-menu {
   display: grid;
   place-content: flex-end;
@@ -111,6 +104,9 @@ body {
   transform: rotate(180deg);
   transition-duration: 1s;
 }
+.menu .fonction1-menu:hover .valide {
+  transform: rotate(0);
+}
 .menu .fonction1-menu .check-menu {
   color: #99E2D0;
   cursor: pointer;
@@ -122,6 +118,9 @@ body {
   display: grid;
   place-items: center;
   transition: all 0.5s;
+}
+.menu .fonction1-menu:hover .check-menu {
+  margin-right: 0;
 }
 .menu .fonction1-menu .ajust-menu {
   overflow: hidden;
@@ -246,6 +245,22 @@ span {
   padding-top: 7px;
 }
 
+@media screen and (min-width: 786px), (min-width: 1020px) {
+  .menu {
+    margin: -4rem 5rem 0rem 5rem;
+    padding: 3rem 9rem 3rem 9rem;
+  }
+  .menu span {
+    padding-left: none;
+    justify-content: center;
+  }
+  .menu span h2 {
+    padding-right: 5rem;
+  }
+  .menu span .heart {
+    padding-right: 5rem;
+  }
+}
 @media screen and (min-width: 1020px), (min-width: 1444px) {
   .menu {
     margin: -4rem 5rem 0rem 5rem;

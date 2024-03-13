@@ -58,9 +58,12 @@ body {
 
 
       .fa-solid {
-        color: transparent;
-        transform: scale(0.15);
 
+        color: transparent;
+        transform: scale(0);
+        background: linear-gradient(#9356dc, #ff79da);
+        transition: all 2s ease-in-out;
+        background-clip: text;
       }
 
       i {
@@ -68,14 +71,9 @@ body {
         font-size: 1.6rem;
       }
 
-      .fa-solid:hover {
-
+      &:hover .fa-solid {
         transform: scale(1.15);
-        background: linear-gradient(#9356dc, #ff79da);
-        background-clip: text;
-        transition-duration: 2s;
       }
-
 
     }
 
@@ -108,17 +106,6 @@ body {
     animation: valider .5s;
     animation-fill-mode: both;
 
-
-    &:hover .valide {
-      transform: scale(1);
-      transform: rotate(0);
-
-    }
-
-    &:hover .check-menu {
-      margin-right: 0;
-    }
-
     .prix-menu {
       display: grid;
       place-content: flex-end;
@@ -136,6 +123,10 @@ body {
       transform: rotate(180deg);
       transition-duration: 1s;
     }
+    &:hover .valide {
+      transform: rotate(0);
+
+    }
 
     .check-menu {
       color: #99E2D0;
@@ -148,6 +139,10 @@ body {
       display: grid;
       place-items: center;
       transition: all 0.5s;
+    }
+
+    &:hover .check-menu {
+      margin-right: 0;
     }
 
     .ajust-menu {
@@ -238,14 +233,15 @@ body {
     padding-top: 10px;
   }
 }
-  h5 {
-    margin: 0;
 
-    a {
-      text-decoration: none;
-      color: white;
-    }
+h5 {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: white;
   }
+}
 
 
 
@@ -268,7 +264,27 @@ span {
   padding-top: 7px;
 }
 
+@media screen and (min-width: 786px), 
+(min-width: 1020px) {
+  .menu {
+    margin: -4rem 5rem 0rem 5rem;
+    padding: 3rem 9rem 3rem 9rem;
 
+
+    span {
+      padding-left: none;
+      justify-content: center;
+
+      h2 {
+        padding-right: 5rem;
+      }
+
+      .heart {
+        padding-right: 5rem;
+      }
+    }
+  }
+}
 
 @media screen and (min-width:1020px),
 (min-width: 1444px) {
