@@ -303,9 +303,10 @@ footer {
         padding-top: 10px;
     }
 
+
     h5 {
         margin: 0;
-
+        background-clip: text;
         a {
             text-decoration: none;
             color: white;
@@ -330,7 +331,7 @@ footer {
         padding-top: 0;
         font-size: 2.7rem;
         padding: 0.5rem 0rem 0.7rem 0rem;
-        font-size: none;
+        
     }
 
     .fonctionnements-padding {

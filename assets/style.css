@@ -252,8 +252,6 @@ footer .space {
 }
 footer h5 {
   margin: 0;
-  -webkit-background-clip: text;
-          background-clip: text;
 }
 footer h5 a {
   text-decoration: none;
