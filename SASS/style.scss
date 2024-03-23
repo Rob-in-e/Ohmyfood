@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 .loading {
@@ -138,7 +139,6 @@ main {
                 margin: 15px;
                 box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, .125);
                 border: 2px solid rgba(217, 217, 217, 1);
-                margin: 15px;
                 padding: 0px 30px 0px 30px;
                 border-radius: 25px;
                 border: 1px solid #fafafa;
@@ -191,11 +191,7 @@ main {
 
         .cards {
 
-            object-fit: cover;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            column-gap: 2rem;
-            row-gap: 1.2rem;
+
 
             .card {
                 border-radius: 1rem;
@@ -236,7 +232,7 @@ main {
                     }
 
                     &:hover .fa-solid {
-                        
+
                         transform: scale(1.15);
                         transition-duration: 2s;
                     }
@@ -304,9 +300,10 @@ footer {
     }
 
 
-    h5 {
+    p {
         margin: 0;
         background-clip: text;
+
         a {
             text-decoration: none;
             color: white;
@@ -315,8 +312,8 @@ footer {
 
 }
 
-@media screen and (min-width: 1020px),
-(min-width: 1444px) {
+@media screen and (min-width: 1024px),
+(min-width: 1440px) {
 
     .div1 {
         font-size: 1rem;
@@ -331,36 +328,43 @@ footer {
         padding-top: 0;
         font-size: 2.7rem;
         padding: 0.5rem 0rem 0.7rem 0rem;
-        
+
     }
 
     .fonctionnements-padding {
-        h1 {
-            padding-left: 3rem;
-        }
+        padding: 2rem 5rem;
+        margin: auto;
+        position: relative;
 
-        h2 {
-            margin-left: 4rem;
+
+        h3 {
+            font-size: 1.1rem;
         }
 
         ol.fonction {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             flex-direction: row;
         }
+
+
     }
+
 
     .restaurant {
         h2 {
             margin-left: 4rem;
         }
-
-        .cards {
-            display: grid;
-            grid-template-columns: 400px 400px;
-            place-content: center;
-        }
     }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 500px 500px;
+        place-content: center;
+        column-gap: 6rem;
+        row-gap: 2rem;
+    }
+
 
     footer {
         display: flex;
@@ -371,7 +375,7 @@ footer {
             display: flex;
             flex-direction: row;
 
-            h5 {
+            p {
                 margin: 1rem;
             }
         }
