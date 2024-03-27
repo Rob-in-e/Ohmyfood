@@ -1,5 +1,20 @@
 {
-  "dependencies": {
-    "sass": "^1.72.0"
-  }
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Mon projet N4 openClassrooms Ohmyfood",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rob-in-e/Ohmyfood.git"
+  },
+  "author": "Rosine Mutangna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rob-in-e/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Rob-in-e/Ohmyfood#readme"
 }
