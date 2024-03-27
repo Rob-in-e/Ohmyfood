@@ -90,7 +90,7 @@ main {
         }
     }
 
-    .container {
+    .explore {
         padding: 2rem 1rem;
         text-align: center;
         background-color: #fafafa;
@@ -311,7 +311,8 @@ footer {
     }
 
 }
-@media screen and (min-width: 1025px){
+
+@media screen and (min-width: 1025px) {
 
     .div1 {
         font-size: 1rem;
@@ -331,9 +332,13 @@ footer {
 
     .fonctionnements-padding {
         padding: 2rem 5rem;
-        margin: auto;
-        position: relative;
+        display: flex;
 
+        .container {
+            max-width: 1280px;
+            margin: auto;
+            position: relative;
+        }
 
         h3 {
             font-size: 1.1rem;
@@ -341,25 +346,25 @@ footer {
 
         ol.fonction {
             display: flex;
-            justify-content: space-evenly;
-            flex-direction: row;
         }
-
 
     }
 
-
     .restaurant {
-        h2 {
-            margin-left: 4rem;
+        display: flex;
+
+        .container {
+            max-width: 1280px;
+            margin: auto;
+            position: relative;
         }
     }
 
     .cards {
         display: grid;
-        grid-template-columns: 500px 500px;
+        grid-template-columns: 400px 400px;
         place-content: center;
-        column-gap: 6rem;
+        column-gap: 5rem;
         row-gap: 2rem;
     }
 

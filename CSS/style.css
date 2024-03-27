@@ -73,16 +73,16 @@ main .div1 .pb-icon {
   font-size: 1.5rem;
   padding-left: 25px;
 }
-main .container {
+main .explore {
   padding: 2rem 1rem;
   text-align: center;
   background-color: #fafafa;
 }
-main .container .command {
+main .explore .command {
   display: grid;
   place-content: center;
 }
-main .container .button {
+main .explore .button {
   display: flex;
   justify-content: center;
   width: 225px;
@@ -97,7 +97,7 @@ main .container .button {
   color: white;
   border-radius: 100px;
 }
-main .container .button:hover {
+main .explore .button:hover {
   transform: scale(1.09);
 }
 main .fonctionnements-padding {
@@ -263,6 +263,10 @@ footer p a {
   }
   .fonctionnements-padding {
     padding: 2rem 5rem;
+    display: flex;
+  }
+  .fonctionnements-padding .container {
+    max-width: 1280px;
     margin: auto;
     position: relative;
   }
@@ -271,17 +275,20 @@ footer p a {
   }
   .fonctionnements-padding ol.fonction {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
   }
-  .restaurant h2 {
-    margin-left: 4rem;
+  .restaurant {
+    display: flex;
+  }
+  .restaurant .container {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
   }
   .cards {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 400px 400px;
     place-content: center;
-    column-gap: 6rem;
+    column-gap: 5rem;
     row-gap: 2rem;
   }
   footer {
