@@ -266,7 +266,6 @@ footer p a {
     display: flex;
   }
   .fonctionnements-padding .container {
-    max-width: 1280px;
     margin: auto;
     position: relative;
   }
@@ -280,7 +279,6 @@ footer p a {
     display: flex;
   }
   .restaurant .container {
-    max-width: 1280px;
     margin: auto;
     position: relative;
   }
