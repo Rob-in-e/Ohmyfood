@@ -154,20 +154,20 @@ main .restaurant {
   background-color: #fafafa;
   padding: 2rem 1rem;
 }
-main .restaurant .cards .card {
+main .card {
   border-radius: 1rem;
   background-color: white;
   width: 100%;
   text-decoration: none;
   color: inherit;
 }
-main .restaurant .cards .card a {
+main .card a {
   cursor: pointer;
 }
-main .restaurant .cards .card .nouveau {
+main .card .nouveau {
   position: relative;
 }
-main .restaurant .cards .card .nouveau::before {
+main .card .nouveau::before {
   content: "Nouveau";
   position: absolute;
   background-color: #99e2d0;
@@ -180,18 +180,18 @@ main .restaurant .cards .card .nouveau::before {
   top: 1rem;
   right: 1rem;
 }
-main .restaurant .cards .card .heart .fa-solid {
+main .card .heart .fa-solid {
   transition: 2s;
   color: transparent;
   transform: scale(0);
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
 }
-main .restaurant .cards .card .heart:hover .fa-solid {
+main .card .heart:hover .fa-solid {
   transform: scale(1.15);
   transition-duration: 2s;
 }
-main .restaurant .cards .card .article-card {
+main .card .article-card {
   padding-right: 1rem;
   padding-left: 1rem;
   position: relative;
@@ -199,19 +199,19 @@ main .restaurant .cards .card .article-card {
   justify-content: space-between;
   align-items: center;
 }
-main .restaurant .cards .card .article-card i {
+main .card .article-card i {
   position: absolute;
   font-size: 1.6rem;
   right: 2rem;
   top: 1.8rem;
 }
-main .restaurant .cards .card .article-card h3 {
+main .card .article-card h3 {
   margin-bottom: 0;
 }
-main .restaurant .cards .card .article-card p {
+main .card .article-card p {
   margin-top: 0.2rem;
 }
-main .restaurant .cards .card .card-img {
+main .card .card-img {
   height: 12rem;
   width: 100%;
   border: 0 solid transparent;

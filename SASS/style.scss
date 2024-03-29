@@ -189,89 +189,86 @@ main {
         background-color: #fafafa;
         padding: 2rem 1rem;
 
-        .cards {
 
+        
+    }
+    .card {
+        border-radius: 1rem;
+        background-color: white;
+        width: 100%;
+        text-decoration: none;
+        color: inherit;
 
+        a {
+            cursor: pointer;
+        }
 
-            .card {
-                border-radius: 1rem;
-                background-color: white;
-                width: 100%;
-                text-decoration: none;
-                color: inherit;
+        .nouveau {
+            position: relative;
+        }
 
-                a {
-                    cursor: pointer;
-                }
+        .nouveau::before {
+            content: "Nouveau";
+            position: absolute;
+            background-color: #99e2d0;
+            color: darken(#99e2d0, 49%);
+            width: 5rem;
+            height: 2rem;
+            display: grid;
+            place-items: center;
+            border-radius: 2px;
+            top: 1rem;
+            right: 1rem;
+        }
 
-                .nouveau {
-                    position: relative;
-                }
-
-                .nouveau::before {
-                    content: "Nouveau";
-                    position: absolute;
-                    background-color: #99e2d0;
-                    color: darken(#99e2d0, 49%);
-                    width: 5rem;
-                    height: 2rem;
-                    display: grid;
-                    place-items: center;
-                    border-radius: 2px;
-                    top: 1rem;
-                    right: 1rem;
-                }
-
-                .heart {
-                    .fa-solid {
-                        transition: 2s;
-                        color: transparent;
-                        transform: scale(0);
-                        background: linear-gradient(#9356dc, #ff79da);
-                        background-clip: text;
-                    }
-
-                    &:hover .fa-solid {
-
-                        transform: scale(1.15);
-                        transition-duration: 2s;
-                    }
-                }
-
-                .article-card {
-                    padding-right: 1rem;
-                    padding-left: 1rem;
-                    position: relative;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    i {
-                        position: absolute;
-                        font-size: 1.6rem;
-                        right: 2rem;
-                        top: 1.8rem;
-                    }
-
-                    h3 {
-                        margin-bottom: 0;
-                    }
-
-                    p {
-                        margin-top: 0.2rem;
-                    }
-                }
-
-                .card-img {
-
-                    height: 12rem;
-                    width: 100%;
-                    border: 0 solid transparent;
-                    border-radius: 1rem 1rem 0 0;
-                    box-shadow: none;
-                    object-fit: cover;
-                }
+        .heart {
+            .fa-solid {
+                transition: 2s;
+                color: transparent;
+                transform: scale(0);
+                background: linear-gradient(#9356dc, #ff79da);
+                background-clip: text;
             }
+
+            &:hover .fa-solid {
+
+                transform: scale(1.15);
+                transition-duration: 2s;
+            }
+        }
+
+        .article-card {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            i {
+                position: absolute;
+                font-size: 1.6rem;
+                right: 2rem;
+                top: 1.8rem;
+            }
+
+            h3 {
+                margin-bottom: 0;
+            }
+
+            p {
+                margin-top: 0.2rem;
+            }
+        }
+
+        .card-img {
+
+            height: 12rem;
+            width: 100%;
+            border: 0 solid transparent;
+            border-radius: 1rem 1rem 0 0;
+            box-shadow: none;
+            object-fit: cover;
         }
     }
 }
@@ -352,6 +349,7 @@ footer {
 
     .restaurant {
         display: flex;
+
         .container {
             margin: auto;
             position: relative;
