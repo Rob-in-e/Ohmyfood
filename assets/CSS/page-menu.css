@@ -250,23 +250,7 @@ p a {
   padding-top: 7px;
 }
 
-@media screen and (min-width: 786px), (min-width: 1020px) {
-  .menu {
-    margin: -4rem 5rem 0rem 5rem;
-    padding: 3rem 9rem 3rem 9rem;
-  }
-  .menu span {
-    padding-left: none;
-    justify-content: center;
-  }
-  .menu span h2 {
-    padding-right: 5rem;
-  }
-  .menu span .heart {
-    padding-right: 5rem;
-  }
-}
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1025px) {
   .menu {
     margin: -4rem 5rem 0rem 5rem;
     padding: 3rem 9rem 3rem 9rem;
@@ -303,4 +287,4 @@ p a {
   }
 }
 
-/*# sourceMappingURL=page.css.map */
+/*# sourceMappingURL=page-menu.css.map */

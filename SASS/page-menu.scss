@@ -272,29 +272,7 @@ p {
   padding-top: 7px;
 }
 
-@media screen and (min-width: 786px),
-(min-width: 1020px) {
-  .menu {
-    margin: -4rem 5rem 0rem 5rem;
-    padding: 3rem 9rem 3rem 9rem;
-
-
-    span {
-      padding-left: none;
-      justify-content: center;
-
-      h2 {
-        padding-right: 5rem;
-      }
-
-      .heart {
-        padding-right: 5rem;
-      }
-    }
-  }
-}
-
-@media screen and (min-width:1020px) {
+@media screen and (min-width:1025px) {
 
   .menu {
     margin: -4rem 5rem 0rem 5rem;
