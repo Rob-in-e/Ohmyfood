@@ -150,24 +150,29 @@ main .fonctionnements-padding ol.fonction li:hover i {
   color: rgb(147, 86, 220);
   cursor: pointer;
 }
+main .cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
 main .restaurant {
   background-color: #fafafa;
   padding: 2rem 1rem;
 }
-main .card {
+main .restaurant .card {
   border-radius: 1rem;
   background-color: white;
   width: 100%;
   text-decoration: none;
   color: inherit;
 }
-main .card a {
+main .restaurant a {
   cursor: pointer;
 }
-main .card .nouveau {
+main .restaurant .nouveau {
   position: relative;
 }
-main .card .nouveau::before {
+main .restaurant .nouveau::before {
   content: "Nouveau";
   position: absolute;
   background-color: #99e2d0;
@@ -180,18 +185,18 @@ main .card .nouveau::before {
   top: 1rem;
   right: 1rem;
 }
-main .card .heart .fa-solid {
+main .restaurant .heart .fa-solid {
   transition: 2s;
   color: transparent;
   transform: scale(0);
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
 }
-main .card .heart:hover .fa-solid {
+main .restaurant .heart:hover .fa-solid {
   transform: scale(1.15);
   transition-duration: 2s;
 }
-main .card .article-card {
+main .restaurant .article-card {
   padding-right: 1rem;
   padding-left: 1rem;
   position: relative;
@@ -199,19 +204,19 @@ main .card .article-card {
   justify-content: space-between;
   align-items: center;
 }
-main .card .article-card i {
+main .restaurant .article-card i {
   position: absolute;
   font-size: 1.6rem;
   right: 2rem;
   top: 1.8rem;
 }
-main .card .article-card h3 {
+main .restaurant .article-card h3 {
   margin-bottom: 0;
 }
-main .card .article-card p {
+main .restaurant .article-card p {
   margin-top: 0.2rem;
 }
-main .card .card-img {
+main .restaurant .card-img {
   height: 12rem;
   width: 100%;
   border: 0 solid transparent;
@@ -282,7 +287,7 @@ footer p a {
     margin: auto;
     position: relative;
   }
-  .cards {
+  .restaurant .cards {
     display: grid;
     grid-template-columns: 400px 400px;
     place-content: center;

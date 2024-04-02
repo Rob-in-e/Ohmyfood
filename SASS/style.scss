@@ -70,6 +70,7 @@ body {
 }
 
 main {
+
     .div1 {
         display: flex;
         justify-content: center;
@@ -185,19 +186,23 @@ main {
 
     }
 
+    .cards {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
     .restaurant {
         background-color: #fafafa;
         padding: 2rem 1rem;
 
-
-        
-    }
-    .card {
-        border-radius: 1rem;
-        background-color: white;
-        width: 100%;
-        text-decoration: none;
-        color: inherit;
+        .card {
+            border-radius: 1rem;
+            background-color: white;
+            width: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
 
         a {
             cursor: pointer;
@@ -270,6 +275,8 @@ main {
             box-shadow: none;
             object-fit: cover;
         }
+
+
     }
 }
 
@@ -354,16 +361,16 @@ footer {
             margin: auto;
             position: relative;
         }
-    }
 
-    .cards {
-        display: grid;
-        grid-template-columns: 400px 400px;
-        place-content: center;
-        column-gap: 5rem;
-        row-gap: 2rem;
-    }
 
+        .cards {
+            display: grid;
+            grid-template-columns: 400px 400px;
+            place-content: center;
+            column-gap: 5rem;
+            row-gap: 2rem;
+        }
+    }
 
     footer {
         display: flex;
